@@ -1,0 +1,60 @@
+reto literatura 
+
+buscar libro 
+listar libros
+listar autores
+listar autores vivos en determinados años
+listar libros por idiomas
+salir
+
+
+estructura de modelado
+// Libro.java
+public class Libro {
+    private String titulo;
+    private String autor;
+    private String idioma;
+    // otros campos...
+
+    // getters y setters...
+}
+
+// GutendexService.java
+import org.springframework.web.client.RestTemplate;
+
+public class GutendexService {
+    private RestTemplate restTemplate = new RestTemplate();
+
+    public List<Libro> getLibros() {
+        // hacer la solicitud HTTP, deserializar la respuesta y devolver los libros
+    }
+}
+
+// LibroRepository.java
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LibroRepository extends JpaRepository<Libro, Long> {
+    // no es necesario agregar ningún método aquí, JpaRepository proporciona los métodos para guardar y recuperar libros
+}
+
+// LibroController.java
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class LibroController {
+    private GutendexService gutendexService;
+    private LibroRepository libroRepository;
+
+    public LibroController(GutendexService gutendexService, LibroRepository libroRepository) {
+        this.gutendexService = gutendexService;
+        this.libroRepository = libroRepository;
+    }
+
+    @GetMapping("/libros")
+    public List<Libro> getLibros() {
+        List<Libro> libros = gutendexService.getLibros();
+        libroRepository.saveAll(libros);
+        return libros;
+    }
+}

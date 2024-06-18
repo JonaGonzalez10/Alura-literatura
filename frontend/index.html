@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Alura Literatura</title>
+</head>
+<body>
+<header class="menu">
+    <div class="icono">
+        <img src="img/logo2.jpeg" alt="Logo">
+    </div>
+    <h1>Alura Literatura</h1>
+    <div class="redes-sociales">
+        <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://www.github.com/"><img src="img/github.png" alt="Github"></a>
+        <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/"><img src="img/linkedin.png" alt="Linkedin"></a>
+    </div>
+</header>
+<section class="contenido">
+    <h2>Consultar libros</h2>
+
+    <form id="buscarPorTitulo">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <form id="buscarPorAutor">
+        <label for="nombreAutor">Buscar por autor:</label>
+        <input type="text" id="nombreAutor" name="nombreAutor">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <form id="buscarPorAutoresVivos">
+        <label for="anio">Buscar autores vivos en el año:</label>
+        <input type="number" id="anio" name="anio">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <form id="buscarPorIdioma">
+        <label for="idioma">Buscar libros por idioma:</label>
+        <input type="text" id="idioma" name="idioma">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <button id="listarTodo">Listar todos los libros</button>
+
+    <button id="limpiar">Limpiar</button>
+
+
+
+</section>
+<footer class="footer">
+    <p>Alura Literatura &copy; 2021</p>
+</footer>
+
+</body>
+</html>

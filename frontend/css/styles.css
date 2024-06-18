@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    flex-shrink: 0;
+}
+.menu .icono{
+    order: 0;
+}
+.menu h1{
+    order: 1;
+}
+.menu .redes-sociales{
+    order: 2;
+}
+.menu .redes-sociales a{
+    margin-right: 10px;
+}
+.menu .icono img{
+    width: 50px;
+}
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.contenido{
+    background-image: url('../img/bg-libros.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+}
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
