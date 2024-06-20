@@ -17,3 +17,9 @@ Lbackend/src/main/java/com/alura/literatura/controlador/LibroControlador.java,6
 backend/pom.xml,f\9\f9590cd73598b6f2427c8b1327d922c50d1dc504
 B
 frontend/js/app.js,1\5\1504e17564787614c99c8753cb6ce27661b73bcf
+u
+Ebackend/src/main/java/com/alura/literatura/modelo/LibroRespuesta.java,7\7\77156d1ce6362dd481ddb78d2fd5146d4bcc2e06
+l
+<backend/src/main/java/com/alura/literatura/modelo/Autor.java,a\2\a24ea32bd8df4219b936263efbf3b20587806a94
+m
+=backend/src/main/java/com/alura/literatura/modelo/Idioma.java,4\4\44e6a8284426330a69f8fae6eea4b34a6d7e81ae

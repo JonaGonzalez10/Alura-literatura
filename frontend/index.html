@@ -47,16 +47,29 @@
             <option value="fr">Francés</option>
             <option value="de">Alemán</option>
         </select>
-        <button type="submit">Buscar</button>
+        <button id="btnbuscarPorIdioma" type="submit">Buscar</button>
     </form>
 
     <button id="listarTodo">Listar todos los libros</button>
 
     <button id="limpiar">Limpiar</button>
 
-
-
 </section>
+<div id="resultados">
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Idioma</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
 <footer class="footer">
     <p>Alura Literatura &copy; 2021</p>
 </footer>

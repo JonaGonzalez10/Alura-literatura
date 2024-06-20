@@ -6,8 +6,8 @@ import com.alura.literatura.servicio.GutendexServicio;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-@RequestMapping(path = "/libros")
-@CrossOrigin(origins = "http://localhost:63342")
+@RequestMapping
+@CrossOrigin(origins = "*")
 @RestController
 public class LibroControlador {
     private final GutendexServicio gutendexServicio;
@@ -18,7 +18,8 @@ public class LibroControlador {
     public List<Libro> getLibros(@RequestParam(required = false) String titulo,
                                  @RequestParam(required = false) String autor,
                                  @RequestParam(required = false) String idioma,
-                                 @RequestParam(required = false) String genero) {
+                                 @RequestParam(required = false) String genero)
+    {
         return gutendexServicio.getLibros(titulo, autor, idioma, genero);
     }
 

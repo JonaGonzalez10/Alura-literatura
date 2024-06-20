@@ -1,15 +1,20 @@
 package com.alura.literatura.servicio;
 
 import com.alura.literatura.modelo.Libro;
-import org.springframework.http.ResponseEntity;
+import com.alura.literatura.modelo.LibroRespuesta;
+import com.alura.literatura.repositorio.LibroRepositorio;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.Arrays;
 import java.util.List;
 @Service
 public class GutendexServicio {
     private RestTemplate plantillaRest = new RestTemplate();
+    private final LibroRepositorio libroRepositorio;
+
+    public GutendexServicio(LibroRepositorio libroRepositorio) {
+        this.libroRepositorio = libroRepositorio;
+    }
+
     public List<Libro> getLibros(String titulo, String autor, String idioma, String genero) {
         String url = "https://gutendex.com/books?";
         if (titulo != null && !titulo.isEmpty()) {
@@ -24,9 +29,13 @@ public class GutendexServicio {
         if (genero != null && !genero.isEmpty()) {
             url += "genre=" + genero;
         }
-        ResponseEntity<Libro[]> respuesta = plantillaRest.getForEntity(url, Libro[].class);
-        return Arrays.asList(respuesta.getBody());
+        LibroRespuesta respuesta = plantillaRest.getForObject(url, LibroRespuesta.class);
+        List<Libro> libros = respuesta.getResultados();
+        if (libros != null) {
+            libroRepositorio.saveAll(libros);
+        }
+
+        return libros;
     }
 }
 
-//Shakespeare, William

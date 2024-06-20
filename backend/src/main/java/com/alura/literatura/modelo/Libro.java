@@ -1,26 +1,26 @@
 package com.alura.literatura.modelo;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
+import java.util.List;
 @Data
 @Entity
+@Table(name = "libros")
 public class Libro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String titulo;
-    private String autor;
-    private String genero;
-    private String idioma;
-    private String editorial;
-    private String fechaPublicacion;
-    private String isbn;
-    private String descripcion;
-    private String portada;
-    private String precio;
-    private String cantidadPaginas;
-    private String cantidadVendida;
-    private String cantidadDisponible;
+    private String Titulo;
+
+    @ManyToMany
+    @JoinTable(name = "libros_autores",
+               joinColumns = @JoinColumn(name = "libro_id"),
+               inverseJoinColumns = @JoinColumn(name = "autor_id"))
+    private List<Autor> autores;
+
+    @ManyToMany
+    @JoinTable(name = "libros_idiomas",
+               joinColumns = @JoinColumn(name = "libro_id"),
+               inverseJoinColumns = @JoinColumn(name = "idioma_id"))
+    private List<Idioma> idiomas;
+    private Double numeroDeDescargas;
 }
