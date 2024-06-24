@@ -6,5 +6,12 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 public class LibroRespuesta {
-    private List<Libro> resultados;
+    private Integer count;
+    private String next;
+    private String previous;
+    private List<Libro> results;
+
+    public List<Libro> getResultados() {
+        return results;
+    }
 }

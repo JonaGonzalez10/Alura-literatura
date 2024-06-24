@@ -1,3 +1,25 @@
 
-
-java:S2259!"GA "NullPointerException" could be thrown; "respuesta" is nullable here.(ìŒıåûÿÿÿÿ8ÿ«‰Ÿƒ2J$97d9b2ca-eb1a-4000-b3a0-3e80a6fea2d9
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8À¾óÅ„2J$107cf0c7-1863-4774-a8b2-520484a131d1
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8À¾óÅ„2J$92b6035b-4aed-4b68-b7d9-2b2d6d14a17c
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8À¾óÅ„2J$2e00adf5-46c8-4eb2-b971-24b2840988b4
+~	java:S125"<This block of commented-out lines of code should be removed.(¨—ìƒ8Â¾óÅ„2J$c5d9d824-0be9-431f-9f7d-14d022ba0d98
+ƒ	java:S125 "<This block of commented-out lines of code should be removed.(¿ğöˆüÿÿÿÿ8Å¾óÅ„2J$4ce2f1e3-90f9-43d2-a328-872e8cb3fc06
+r	java:S106<"+Replace this use of System.out by a logger.(œµ†Óûÿÿÿÿ8Ç¾óÅ„2J$950b6490-dfba-4393-ab2d-ffdc35f3c0bf
+r	java:S106D"+Replace this use of System.out by a logger.(©šŸàùÿÿÿÿ8È¾óÅ„2J$3bf64121-b366-470a-928d-4bc7f7044b61
+n
+java:S1168E"+Return an empty collection instead of null.(¥¹ï8È¾óÅ„2J$3ac6a4c0-9b27-4025-b6b4-15b934026875
+m	java:S106]"+Replace this use of System.out by a logger.(àˆó½8É¾óÅ„2J$f4408dd9-b9e3-4bca-9ebf-699446d2ef60
+~	java:S125I"<This block of commented-out lines of code should be removed.(€º­Ê8É¾óÅ„2J$5e39a99a-dab4-4497-9b94-6beb8e0fcd39
+ƒ	java:S125^"<This block of commented-out lines of code should be removed.(ì×µŸÿÿÿÿÿ8É¾óÅ„2J$ac412063-fa84-447a-935f-8ac625f0fb46
+m	java:S106a"+Replace this use of System.out by a logger.(ŸË¡—8Ê¾óÅ„2J$15cc6b85-4fa2-4d5a-90b0-f96b4569a494
+n
+java:S1168b"+Return an empty collection instead of null.(¥¹ï8Ê¾óÅ„2J$201a3db9-dd9d-4641-b965-15e354756512
+˜
+java:S1128"PRemove this unused import 'com.alura.literatura.repositorio.PersonaRepositorio'.(×š’Øÿÿÿÿÿ8Ê¾óÅ„2J$498e7396-1629-4d7c-bdc9-b97f5294d837
+
+java:S1128">Remove this unused import 'com.alura.literatura.modelo.Autor'.(Ù£ù½8Ê¾óÅ„2J$c89a8217-ccaf-4135-b87f-9bbbc5ca90f9
+ƒ
+java:S1128"@Remove this unused import 'com.alura.literatura.modelo.Persona'.(“ºå´8Ê¾óÅ„2J$d64ced9f-7cea-4598-abb3-af585661aa58

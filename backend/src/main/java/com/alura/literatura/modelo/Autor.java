@@ -10,4 +10,10 @@ public class Autor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
+
+    public void setBirthYear(Integer birthYear) {
+    }
+
+    public void setDeathYear(Integer deathYear) {
+    }
 }

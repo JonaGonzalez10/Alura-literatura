@@ -19,10 +19,25 @@ document.getElementById('btnbuscarPorIdioma').addEventListener('click', function
         .then(data => {
             var resultadosDiv = document.getElementById('resultados'); // Asegúrate de tener un div con id 'resultados' en tu HTML
             resultadosDiv.innerHTML = ''; // Limpia el div antes de agregar nuevos datos
-            data.forEach(Libro => {
+            data.forEach(libro => {
                 var libroDiv = document.createElement('div');
-                libroDiv.textContent = libro.title + ' por ' + libro.authors[0].name; // Asegúrate de que los nombres de las propiedades coincidan con los de tu objeto libro
+                var titulo = document.createElement('h2');
+                var autor = document.createElement('p');
+                var idioma = document.createElement('p');
+                var descargas = document.createElement('p');
+
+                titulo.textContent = libro.Titulo;
+                autor.textContent = 'Autor: ' + libro.authors[0].name;
+                idioma.textContent = 'Idioma: ' + libro.languages[0];
+                descargas.textContent = 'Descargas: ' + libro.download_count;
+
+                libroDiv.appendChild(titulo);
+                libroDiv.appendChild(autor);
+                libroDiv.appendChild(idioma);
+                libroDiv.appendChild(descargas);
+
                 resultadosDiv.appendChild(libroDiv);
+
             });
         })
         .catch(error => {

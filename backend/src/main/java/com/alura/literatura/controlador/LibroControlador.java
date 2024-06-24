@@ -15,12 +15,12 @@ public class LibroControlador {
         this.gutendexServicio = gutendexServicio;
     }
     @GetMapping("/libros")
-    public List<Libro> getLibros(@RequestParam(required = false) String titulo,
-                                 @RequestParam(required = false) String autor,
-                                 @RequestParam(required = false) String idioma,
-                                 @RequestParam(required = false) String genero)
+    public List<Libro> getLibros(@RequestParam(required = false) String title,
+                                 @RequestParam(required = false) String author,
+                                 @RequestParam(required = false) String languaje,
+                                 @RequestParam(required = false) String genre)
     {
-        return gutendexServicio.getLibros(titulo, autor, idioma, genero);
+        return gutendexServicio.getLibros(title, author, languaje, genre);
     }
 
 }
