@@ -1,25 +1,21 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8À¾óÅ„2J$107cf0c7-1863-4774-a8b2-520484a131d1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8À¾óÅ„2J$ee41e1b2-c971-4589-b349-0dd36f55f899
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8À¾óÅ„2J$92b6035b-4aed-4b68-b7d9-2b2d6d14a17c
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8À¾óÅ„2J$e6bc1f85-c3d0-4189-82a4-1ee049a97be4
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8À¾óÅ„2J$2e00adf5-46c8-4eb2-b971-24b2840988b4
-~	java:S125"<This block of commented-out lines of code should be removed.(¨—ìƒ8Â¾óÅ„2J$c5d9d824-0be9-431f-9f7d-14d022ba0d98
-ƒ	java:S125 "<This block of commented-out lines of code should be removed.(¿ğöˆüÿÿÿÿ8Å¾óÅ„2J$4ce2f1e3-90f9-43d2-a328-872e8cb3fc06
-r	java:S106<"+Replace this use of System.out by a logger.(œµ†Óûÿÿÿÿ8Ç¾óÅ„2J$950b6490-dfba-4393-ab2d-ffdc35f3c0bf
-r	java:S106D"+Replace this use of System.out by a logger.(©šŸàùÿÿÿÿ8È¾óÅ„2J$3bf64121-b366-470a-928d-4bc7f7044b61
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8À¾óÅ„2J$8025793f-0994-4f72-8d8a-17dcd41c4ff9
+~	java:S125"<This block of commented-out lines of code should be removed.(¨—ìƒ8Â¾óÅ„2J$39c3acb2-24b9-4d26-8c3b-8418b011f0d0
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(¿ğöˆüÿÿÿÿ8Å¾óÅ„2J$c63e7841-c403-4c70-b029-9ce110210001
+r	java:S106;"+Replace this use of System.out by a logger.(œµ†Óûÿÿÿÿ8Ç¾óÅ„2J$0a012011-22b1-4644-80b5-976c883f5ef6
+r	java:S106C"+Replace this use of System.out by a logger.(©šŸàùÿÿÿÿ8È¾óÅ„2J$d9569e48-16dc-4e76-8679-2bf7637e22b9
 n
-java:S1168E"+Return an empty collection instead of null.(¥¹ï8È¾óÅ„2J$3ac6a4c0-9b27-4025-b6b4-15b934026875
-m	java:S106]"+Replace this use of System.out by a logger.(àˆó½8É¾óÅ„2J$f4408dd9-b9e3-4bca-9ebf-699446d2ef60
-~	java:S125I"<This block of commented-out lines of code should be removed.(€º­Ê8É¾óÅ„2J$5e39a99a-dab4-4497-9b94-6beb8e0fcd39
-ƒ	java:S125^"<This block of commented-out lines of code should be removed.(ì×µŸÿÿÿÿÿ8É¾óÅ„2J$ac412063-fa84-447a-935f-8ac625f0fb46
-m	java:S106a"+Replace this use of System.out by a logger.(ŸË¡—8Ê¾óÅ„2J$15cc6b85-4fa2-4d5a-90b0-f96b4569a494
+java:S1168D"+Return an empty collection instead of null.(¥¹ï8È¾óÅ„2J$1b5b5dea-207a-4913-8a37-6ed17e6daaf6
+m	java:S106\"+Replace this use of System.out by a logger.(àˆó½8É¾óÅ„2J$a47e87fb-91a8-4a51-ba5c-f259eb25bd6f
+~	java:S125H"<This block of commented-out lines of code should be removed.(€º­Ê8É¾óÅ„2J$31533735-9c3e-4c21-a60e-332526a8f467
+ƒ	java:S125]"<This block of commented-out lines of code should be removed.(ì×µŸÿÿÿÿÿ8É¾óÅ„2J$e9167373-1fe8-4dcd-a9b4-2ddb2751b742
+m	java:S106`"+Replace this use of System.out by a logger.(ŸË¡—8Ê¾óÅ„2J$05518d7c-e174-48ba-95a5-f18bf05b6e70
 n
-java:S1168b"+Return an empty collection instead of null.(¥¹ï8Ê¾óÅ„2J$201a3db9-dd9d-4641-b965-15e354756512
-˜
-java:S1128"PRemove this unused import 'com.alura.literatura.repositorio.PersonaRepositorio'.(×š’Øÿÿÿÿÿ8Ê¾óÅ„2J$498e7396-1629-4d7c-bdc9-b97f5294d837
-
-java:S1128">Remove this unused import 'com.alura.literatura.modelo.Autor'.(Ù£ù½8Ê¾óÅ„2J$c89a8217-ccaf-4135-b87f-9bbbc5ca90f9
+java:S1168a"+Return an empty collection instead of null.(¥¹ï8Ê¾óÅ„2J$b38376fa-43bb-4623-aef6-896509fabfe3
 ƒ
-java:S1128"@Remove this unused import 'com.alura.literatura.modelo.Persona'.(“ºå´8Ê¾óÅ„2J$d64ced9f-7cea-4598-abb3-af585661aa58
+java:S1128"@Remove this unused import 'com.alura.literatura.modelo.Persona'.(“ºå´8Ê¾óÅ„2J$18ef58ad-cf24-476a-b3dd-38ecf77e219b

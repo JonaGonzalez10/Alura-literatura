@@ -39,6 +39,14 @@ body{
     background-repeat: no-repeat;
     flex-grow: 1;
 }
+#resultados{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    overflow: auto;
+}
 .footer{
     background-color: #333;
     color: white;

@@ -1,6 +1,5 @@
 package com.alura.literatura.servicio;
-import com.alura.literatura.repositorio.PersonaRepositorio;
-import com.alura.literatura.modelo.Autor;
+
 import com.alura.literatura.modelo.Libro;
 import com.alura.literatura.modelo.LibroRespuesta;
 import com.alura.literatura.repositorio.AutorRepositorio;

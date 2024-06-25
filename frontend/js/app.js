@@ -1,7 +1,8 @@
-document.getElementById('btnbuscarPorIdioma').addEventListener('click', function(event) {
+document.addEventListener('DOMContentLoaded', function() {
+document.getElementById('listarTodo').addEventListener('click', function(event) {
     event.preventDefault(); // Evita que la página se recargue
 
-    var titulo = document.getElementById('titulo').value;
+   /* var titulo = document.getElementById('titulo').value;
     var autor = document.getElementById('autor').value;
     var idioma = document.getElementById('idioma').value;
     var genero = document.getElementById('genero').value;
@@ -13,20 +14,55 @@ document.getElementById('btnbuscarPorIdioma').addEventListener('click', function
     if (idioma) url += 'languages=' + idioma;
     if (genero) url += 'genre=' + genero;
 
-    // Realiza una solicitud GET al servidor
-    fetch(url)
+    */
+    // Realiza una solicitud GET al servidor para obtener la contraseña
+    /*fetch('http://localhost:8080/getPassword', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+
         .then(response => response.json())
         .then(data => {
-            var resultadosDiv = document.getElementById('resultados'); // Asegúrate de tener un div con id 'resultados' en tu HTML
-            resultadosDiv.innerHTML = ''; // Limpia el div antes de agregar nuevos datos
-            data.forEach(libro => {
+            const password = data.password;
+            // Ahora puedes usar la contraseña para hacer otra solicitud o lo que necesites hacer con ella
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+*/
+
+
+    // Realiza una solicitud GET al servidor
+    fetch('http://localhost:8080/libros', {
+        headers: {
+            'Authorization': 'Basic ' + btoa('user:Nastya')
+        }
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('la respuesta no es correcta' + response.status);
+            }
+            return response.text();
+        })
+        .then(data => {
+            if (data) {
+                return JSON.parse(data);
+            } else {
+                return {};
+            }
+        })
+        .then(libros => {
+            var librosDiv = document.getElementById('resultados');
+            libros.forEach(libro => {
                 var libroDiv = document.createElement('div');
                 var titulo = document.createElement('h2');
                 var autor = document.createElement('p');
                 var idioma = document.createElement('p');
                 var descargas = document.createElement('p');
 
-                titulo.textContent = libro.Titulo;
+                titulo.textContent = libro.title;
                 autor.textContent = 'Autor: ' + libro.authors[0].name;
                 idioma.textContent = 'Idioma: ' + libro.languages[0];
                 descargas.textContent = 'Descargas: ' + libro.download_count;
@@ -36,12 +72,12 @@ document.getElementById('btnbuscarPorIdioma').addEventListener('click', function
                 libroDiv.appendChild(idioma);
                 libroDiv.appendChild(descargas);
 
-                resultadosDiv.appendChild(libroDiv);
-
+                librosDiv.appendChild(libroDiv);
             });
         })
         .catch(error => {
-            // Aquí puedes manejar cualquier error que ocurra durante la solicitud
+            // Muestra un mensaje de error
             console.error('Error:', error);
         });
+});
 });

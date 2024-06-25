@@ -39,3 +39,5 @@ u
 Ebackend/src/main/java/com/alura/literatura/LiteraturaApplication.java,4\8\48caab4083fa42966e153d89dce7ca5ea3cb77be
 p
 @backend/src/main/java/com/alura/literatura/modelo/Traductor.java,b\a\ba8bd8cad81ff0baea6f108ce8f869785182284f
+{
+Kbackend/src/main/java/com/alura/literatura/controlador/PassControlador.java,8\f\8f881a36962167060373da662147bfd3ff22a79f
